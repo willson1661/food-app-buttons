@@ -1,0 +1,2 @@
+(this["webpackJsonpfood-app-buttons"]=this["webpackJsonpfood-app-buttons"]||[]).push([[4],{36:function(s,t,e){"use strict";e.r(t);e(1);var o=e(2);t.default=()=>Object(o.jsx)("div",{children:Object(o.jsx)("div",{className:"h2_1",children:"About page"})})}}]);
+//# sourceMappingURL=4.5c309b63.chunk.js.map
