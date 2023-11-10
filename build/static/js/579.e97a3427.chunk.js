@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfood_app_buttons=self.webpackChunkfood_app_buttons||[]).push([[579],{579:(s,e,a)=>{a.r(e),a.d(e,{default:()=>o});a(791);var d=a(184);const o=()=>(0,d.jsx)("div",{children:(0,d.jsx)("div",{className:"h2_1",children:"Profile Page"})})}}]);
+//# sourceMappingURL=579.e97a3427.chunk.js.map

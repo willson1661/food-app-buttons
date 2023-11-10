@@ -24,14 +24,15 @@ const App = () => {
         <Navbar handleshow={handleshow} />
         <Menu />
         {/* {showcart ? <Products /> : <CartList />} */}
-
+        <Products /> 
+        <Footer/>
         <Router>
           <Routes>
             <Route
               path="/"
               element={
                 <React.Suspense fallback="Loading...">
-                  <Products /> 
+                  <Products />   
                 </React.Suspense>
               }
             />
@@ -71,7 +72,7 @@ const App = () => {
             />
           </Routes>
         </Router>
-        <Footer />
+     
       </CartProvider>
     </>
   );

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/food-app-react/static/css/main.161c0ef8.css",
+    "main.js": "/food-app-react/static/js/main.d36384a5.js",
+    "static/js/113.dcd2e7cc.chunk.js": "/food-app-react/static/js/113.dcd2e7cc.chunk.js",
+    "static/js/411.264a8035.chunk.js": "/food-app-react/static/js/411.264a8035.chunk.js",
+    "static/js/579.e97a3427.chunk.js": "/food-app-react/static/js/579.e97a3427.chunk.js",
+    "static/js/960.a84a9383.chunk.js": "/food-app-react/static/js/960.a84a9383.chunk.js",
+    "index.html": "/food-app-react/index.html",
+    "main.161c0ef8.css.map": "/food-app-react/static/css/main.161c0ef8.css.map",
+    "main.d36384a5.js.map": "/food-app-react/static/js/main.d36384a5.js.map",
+    "113.dcd2e7cc.chunk.js.map": "/food-app-react/static/js/113.dcd2e7cc.chunk.js.map",
+    "411.264a8035.chunk.js.map": "/food-app-react/static/js/411.264a8035.chunk.js.map",
+    "579.e97a3427.chunk.js.map": "/food-app-react/static/js/579.e97a3427.chunk.js.map",
+    "960.a84a9383.chunk.js.map": "/food-app-react/static/js/960.a84a9383.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.161c0ef8.css",
+    "static/js/main.d36384a5.js"
+  ]
+}
