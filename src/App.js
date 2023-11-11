@@ -22,36 +22,35 @@ const App = () => {
   return (
     <>
       <CartProvider>
-       
+        
         {/* {showcart ? <Products /> : <CartList />} */}
-       
-       
-        <Navbar handleshow={handleshow} />
+    <Navbar handleshow={handleshow} />
         <Menu />
-                
-  
+                 
+
         <Router>
-     
           <Routes>
-      
-        
-        
-           
-             <Route
-              path="/Home"
-             
+          <Route
+              path=""
               element={
                 <React.Suspense fallback="Loading...">
-                  <Products/> <Footer/>
+                  <Products /> 
                 </React.Suspense>
               }
-            /> 
-
+            />
+          <Route
+              path="/Home"
+              element={
+                <React.Suspense fallback="Loading...">
+                  <Products />         <Footer/>
+                </React.Suspense>
+              }
+            />
             <Route
               path="/profile"
               element={
                 <React.Suspense fallback="Loading...">
-                  <Profile /> <Footer/>
+                  <Profile />        <Footer/>
                 </React.Suspense>
               }
             />
@@ -59,23 +58,23 @@ const App = () => {
               path="/about"
               element={
                 <React.Suspense fallback="Loading...">
-                  <About /><Footer/>
+                  <About />        <Footer/>
                 </React.Suspense>
               }
             />
 
-          
+        
             <Route
               path="CART"
               element={
                 <React.Suspense fallback="Loading...">
-                  <CartList /><Footer/>
+                  <CartList />        <Footer/>
                 </React.Suspense>
               }
             />
           </Routes>
         </Router>
-      
+
       </CartProvider>
     </>
   );
