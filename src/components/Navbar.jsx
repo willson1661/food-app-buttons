@@ -4,7 +4,7 @@ import React from "react";
 
 import MyButton from "./MyButton";
 import Dext from "./Dext";
-import Foodie from "./Foodie";
+
 const Navbar = (props) => {
   const [scroll, setScroll] = React.useState(0);
 
@@ -20,22 +20,23 @@ const Navbar = (props) => {
       <div className={className}>
         <nav className="container">
           <div className="logo" onClick={() => props.handleshow(true)}>
-            {/* Foo<Span>dy Zo</Span>ne */}
-            <Foodie className="wil" to=""></Foodie>
+            Foo<Span>dy Zo</Span>ne
+            {/* <Foodie className="wil" to=""></Foodie> */}
           </div>
 
           <div className="y1" onClick={() => props.handleshow(false)}>
             <div>
               <ul>
+             
                 <MyButton to="Home" />
-
-                <MyButton to="Profile" />
-                <MyButton to="About" />
+                <MyButton target="_blank" to="Profile" />
+                <MyButton target="_blank" to="About" />
               </ul>
             </div>
             <div>
               <Dext className="wil" to="CART"></Dext>
             </div>
+          
           </div>
         </nav>
       </div>
