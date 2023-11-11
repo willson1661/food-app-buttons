@@ -12,6 +12,7 @@ const CartList = React.lazy(() => import("./components/CartList"));
 const About = React.lazy(() => import("./components/About"));
 const Profile = React.lazy(() => import("./components/Profile"));
 const Products = React.lazy(() => import("./components/Products"));
+
 const App = () => {
   const [showcart, setshowcart] = useState([]);
   const handleshow = (value) => {
@@ -21,27 +22,36 @@ const App = () => {
   return (
     <>
       <CartProvider>
+       
+        {/* {showcart ? <Products /> : <CartList />} */}
+       
+       
         <Navbar handleshow={handleshow} />
         <Menu />
-        {/* {showcart ? <Products /> : <CartList />} */}
-        <Products /> 
-        <Footer/>
+                
+  
         <Router>
+     
           <Routes>
-            <Route
-              path="/"
+      
+        
+        
+           
+             <Route
+              path="/Home"
+             
               element={
                 <React.Suspense fallback="Loading...">
-                  <Products />   
+                  <Products/> <Footer/>
                 </React.Suspense>
               }
-            />
+            /> 
 
             <Route
               path="/profile"
               element={
                 <React.Suspense fallback="Loading...">
-                  <Profile />
+                  <Profile /> <Footer/>
                 </React.Suspense>
               }
             />
@@ -49,30 +59,23 @@ const App = () => {
               path="/about"
               element={
                 <React.Suspense fallback="Loading...">
-                  <About />
+                  <About /><Footer/>
                 </React.Suspense>
               }
             />
 
-            <Route
-              path="/Home"
-              element={
-                <React.Suspense fallback="Loading...">
-                  <Products /> 
-                </React.Suspense>
-              }
-            />
+          
             <Route
               path="CART"
               element={
                 <React.Suspense fallback="Loading...">
-                  <CartList />
+                  <CartList /><Footer/>
                 </React.Suspense>
               }
             />
           </Routes>
         </Router>
-     
+      
       </CartProvider>
     </>
   );
