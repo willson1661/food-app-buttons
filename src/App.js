@@ -1,8 +1,8 @@
 import "./styles.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import React from "react";
-
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./Footer/Footer";
 import { CartProvider } from "react-use-cart";
@@ -31,10 +31,10 @@ const App = () => {
         <Router>
           <Routes>
           <Route
-              path=""
+              path="/food-app-buttons"
               element={
                 <React.Suspense fallback="Loading...">
-                  <Products /> 
+                  <Home/>
                 </React.Suspense>
               }
             />
@@ -72,6 +72,8 @@ const App = () => {
                 </React.Suspense>
               }
             />
+             
+             <Route path="/"/>
           </Routes>
         </Router>
 
