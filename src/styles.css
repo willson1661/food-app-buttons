@@ -75,7 +75,7 @@
 #y11 {
   position: relative !important;
   top: 13rem !important;
-  height: 1000px !important;
+  height: 26rem !important;
 }
 .navbar {
   transition: 500ms ease;
@@ -86,7 +86,7 @@
   z-index: 100;
 }
 .h2_1{
-  height: 937px;
+  height: 25rem;
   display: flex;
   align-items: center;
   place-content: center;
