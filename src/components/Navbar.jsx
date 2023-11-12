@@ -1,7 +1,7 @@
 import "../styles.css";
 import styled from "styled-components";
 import React from "react";
-
+import Foodie from "./Foodie";
 import MyButton from "./MyButton";
 import Dext from "./Dext";
 
@@ -20,14 +20,14 @@ const Navbar = (props) => {
       <div className={className}>
         <nav className="container">
           <div className="logo" onClick={() => props.handleshow(true)}>
-            Foo<Span>dy Zo</Span>ne
-            {/* <Foodie className="wil" to=""></Foodie> */}
+            {/* Foo<Span>dy Zo</Span>ne */}
+            <Foodie className="wil" to=""></Foodie>
           </div>
 
           <div className="y1" onClick={() => props.handleshow(false)}>
             <div>
               <ul>
-             
+              <MyButton to="" />
                 <MyButton to="Home" />
                 <MyButton target="_blank" to="Profile" />
                 <MyButton target="_blank" to="About" />
