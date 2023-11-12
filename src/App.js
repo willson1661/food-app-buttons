@@ -31,6 +31,14 @@ const App = () => {
         <Router>
           <Routes>
           <Route
+              path=""
+              element={
+                <React.Suspense fallback="Loading...">
+                  <Home/>
+                </React.Suspense>
+              }
+            />
+          <Route
               path="/food-app-buttons"
               element={
                 <React.Suspense fallback="Loading...">
