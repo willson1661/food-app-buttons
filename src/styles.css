@@ -3,10 +3,11 @@
 }
 .footer {
   position: relative;
-  margin: 0px;
+  margin: 0 auto;
   background-color: #27374d;
   padding: 1px;
   color: #fff;
+  
 }
 
 .footer-content {
@@ -86,7 +87,7 @@
   z-index: 100;
 }
 .h2_1{
-  height: 25rem;
+  height: 65rem;
   display: flex;
   align-items: center;
   place-content: center;
